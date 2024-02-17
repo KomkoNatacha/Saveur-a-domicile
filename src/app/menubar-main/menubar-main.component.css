@@ -1,0 +1,15 @@
+.espace{
+  flex:  1 ;
+}
+.logo{
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+  box-sizing: content-box;
+}
+.custom-toolbar{
+  height: 100px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
