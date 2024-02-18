@@ -1,4 +1,34 @@
 <div class="mat-body">
-  <img src="assets/images/photoPrincipal.jpg" width="100%" height="40%">
+  <div class="photo-container">
+    <img src="assets/images/burger.jpg" width="100%" height="40%">
+    <div class="overlay-content">
+      <h1 class="slogan">EXPLORE LES RESTAURANTS A PROXIMITE</h1>
+      <button mat-raised-button color="warn" class="btn-overlay" >Débute ici</button>
+    </div>
+  </div>
 
+
+  <mat-grid-list cols="2" rowHeight="2:2" gutterSize="15px">
+    <mat-grid-tile>
+      <img src="assets/images/cuisinierResto.jpg" width="100%" height="50%">
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="grid-description">
+        <h1>Ajouter votre restaurant</h1>
+        <p>Exposez vos plats délicieux, attirez de nouveaux clients et gérez facilement votre menu en ligne.</p>
+        <button mat-button color="accent">Rejoignez-nous dès aujourd'hui!</button>
+      </div>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <div class="grid-description">
+        <h1>Devenir Livreur</h1>
+        <p>Rejoignez notre équipe de livreurs dédiés et contribuez à offrir une expérience de livraison exceptionnelle à nos clients.</p>
+        <button mat-button color="accent"> Inscrivez-vous dès maintenant</button>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <img src="assets/images/livreur.jpg" width="100%" height="60%">
+    </mat-grid-tile>
+  </mat-grid-list>
 </div>

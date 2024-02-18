@@ -13,7 +13,8 @@ import {MatIcon} from "@angular/material/icon";
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { HomeComponent } from './home/home.component';
-import {MatCard} from "@angular/material/card";
+import {MatCard, MatCardActions, MatCardContent, MatCardTitle} from "@angular/material/card";
+import {MatGridList, MatGridListModule, MatGridTile} from "@angular/material/grid-list";
 
 @NgModule({
   declarations: [
@@ -31,6 +32,12 @@ import {MatCard} from "@angular/material/card";
     MatIcon,
     MatIconButton,
     MatCard,
+    MatCardTitle,
+    MatCardActions,
+    MatCardContent,
+    MatGridList,
+    MatGridTile,
+    MatGridListModule,
 
   ],
   providers: [

@@ -1,1 +1,45 @@
 
+.photo-container {
+  position: relative;
+}
+
+
+.mat-grid-tile {
+  padding: 0
+}
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.slogan {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+
+}
+
+.btn-overlay {
+  margin-top: 30px;
+  font-size: 40px;
+  font-family: Arial, sans-serif;
+  width: 300px;
+  height: 70px;
+
+}
+
+
+.mat-accent {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+p{
+  font-size: 15px;
+
+
+}
+
