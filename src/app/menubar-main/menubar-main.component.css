@@ -8,14 +8,12 @@
   box-sizing: content-box;
 }
 .custom-toolbar{
+  position: fixed;
   height: 130px;
   padding: 0 20px;
-  display: flex;
-  align-items: center;
+  top: 0;
   background-color: rgba(0, 0, 0, 0.98);
-
-
-
+  z-index: 1000;
 }
 button{
   font-size: 18px;
