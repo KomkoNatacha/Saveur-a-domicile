@@ -4,9 +4,7 @@
 }
 
 
-.mat-grid-tile {
-  padding: 0
-}
+
 .overlay-content{
   position: absolute;
   top: 0;
@@ -41,16 +39,17 @@
 
 
 .mat-accent {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+  background-color: #f7b34f;
+  color: #ffffff;
 }
 
 .mat-warn {
-  background-color: rgba(0, 0, 0, 0.98);
-  color: rgb(255, 255, 255);
+  background-color: #f7b34f;
+  color: #ffffff;
 }
 p{
   font-size: 15px;
+
 
 
 }
@@ -59,3 +58,30 @@ p{
   color: #ffffff;
 }
 
+
+
+.mat-grid-tile{
+  background: rgb(234, 170, 170);
+
+}
+p , h1 {
+  color: #ffffff;
+}
+.text{
+  padding-top: 15px;
+  text-align: center;
+  color: black;
+}
+.highlight{
+  color: #f7b34f;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.mat-grid-list{
+  padding-top: 30px;
+}
+.etape{
+  text-align: center;
+  background-color: black;
+}

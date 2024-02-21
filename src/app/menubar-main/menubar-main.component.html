@@ -4,9 +4,9 @@
   <img src="assets/images/logoHome.png" class="logo">
   <span class="espace"></span>
 
-  <button class="home-info" routerLink="" mat-button >Acceuil</button>
-  <button routerLink="signin" mat-button>Se connecter</button>
-  <button routerLink="signup" mat-button> S'inscrire</button>
+  <button [class.active-button]="isHomeActive" class="home-info custom-button" routerLink="" mat-button>Accueil</button>
+  <button routerLink="signin" class="custom-button" mat-button>Se connecter</button>
+  <button routerLink="signup" class="custom-button" mat-button> S'inscrire</button>
 
 
 </mat-toolbar>
