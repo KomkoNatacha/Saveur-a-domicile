@@ -4,8 +4,7 @@
 }
 
 
-
-.overlay-content{
+.overlay-content {
   position: absolute;
   top: 0;
   left: 0;
@@ -16,72 +15,147 @@
   align-items: center;
   justify-content: center;
 }
-.content-items{
+
+.content-items {
   display: grid;
   justify-items: center;
 }
 
 .slogan {
-  font-size: 40px;
-  font-weight: bold;
-  font-family: Arial;
+  font-size: 50px;
+  font-family: ComicSansMS, serif;
 
 }
 
 .btn-overlay {
   margin-top: 30px;
-  font-size: 40px;
-  font-family: Arial, sans-serif;
-  width: 300px;
+  font-size: 30px;
+  font-family: ComicSansMS, serif;
+  width: 250px;
   height: 70px;
+
+}
+
+.content-items p {
+  font-family: ComicSansMS, serif;
+  font-size: 20px;
 
 }
 
 
 .mat-accent {
-  background-color: #f7b34f;
+
+  font-family: ComicSansMS, serif;
+  background: rgba(0, 0, 0, 0.6);
   color: #ffffff;
+  border-color: #f7b34f;
 }
 
-.mat-warn {
-  background-color: #f7b34f;
-  color: #ffffff;
-}
-p{
+
+p {
   font-size: 15px;
 
 
-
 }
-.custom-yellow{
-  background-color: #f7b34f;
+
+.custom-yellow {
+  background: rgba(0, 0, 0, 0.6);
   color: #ffffff;
-}
-
-
-
-.mat-grid-tile{
-  background: rgb(234, 170, 170);
+  border-color: #f7b34f;
 
 }
-p , h1 {
+
+
+.mat-grid-tile {
+  background: rgba(0,0,0,0.6);
+
+}
+
+p, h1 {
   color: #ffffff;
+  font-family: ComicSansMS, serif;
+
 }
-.text{
+
+.text {
   padding-top: 15px;
   text-align: center;
   color: black;
+  font-size: 25px;
+  font-family: ComicSansMS, serif;
+
 }
-.highlight{
+
+.highlight {
   color: #f7b34f;
   font-weight: bold;
   font-style: italic;
+  font-family: ComicSansMS, serif;
+
 }
 
-.mat-grid-list{
+.mat-grid-list {
   padding-top: 30px;
 }
-.etape{
+
+
+
+.etape {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+}
+
+.stepBox {
+  display : inline-block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  background-color: black;
+}
+
+
+.cont img , .cont h3, .cont p {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: ComicSansMS, serif;
+  padding: 20px;
+
+}
+
+.cont h3, .cont p {
+  padding: 0 20px;
+}
+
+
+.etape{
+  background: rgb(255, 255, 255);
+}
+
+.cont h3{
+  color: #f7b34f;
+  font-size: 20px;
+
+
+}
+
+.container .mat-grid-list{
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.cont p {
+  color: #000000;
+
 }

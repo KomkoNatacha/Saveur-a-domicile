@@ -1,53 +1,77 @@
 <div class="mat-body">
   <div class="photo-container">
-    <img alt="" height="40%" src="assets/images/imageHome.jpg" width="100%">
+    <img alt="" height="40%" src="assets/images/imgHome.jpg" width="100%">
     <div class="overlay-content">
       <div class="content-items">
-        <h1 class="slogan">EXPLORE LES RESTAURANTS A PROXIMITE</h1>
-        <button class="btn-overlay custom-yellow" color="warn" mat-raised-button>Débute ici</button>
+        <h1 class="slogan">Explore les restaurants à proximité</h1>
+        <p>Livre la nourriture depuis plus de 10ans </p>
+        <button mat-s troked-button class="btn-overlay custom-yellow">Débute ici</button>
       </div>
 
     </div>
   </div>
 
-<div class="container">
-  <h1 class="text">Comment obtenir de la <span class="highlight"> nourriture chez vous</span></h1>
+  <div class="container">
+    <h1 class="text"> ~ Commander votre nourriture préferée<span class="highlight">  chez vous ~</span></h1>
 
-  <mat-grid-list cols="3" rowHeight="230px">
+    <mat-grid-list cols="3" rowHeight="420px">
 
+      <mat-grid-tile class="etape">
+        <div class="stepBox">
+          <div class="cont">
+            <img src="assets/images/img3.jpg">
+            <h3> NIVEAU PROFESSIONNEL</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+      </mat-grid-tile>
 
-    <mat-grid-tile class="etape">
-      <div class="stepBox">
-        <h1>1</h1>
-        <p>Sélectionnez la nourriture</p>
-      </div>
-    </mat-grid-tile>
-    <mat-grid-tile class="etape">
-      <div class="stepBox">
-        <h1>2</h1>
-        <p>Remplissez les détails</p>
-      </div>
-    </mat-grid-tile>
-    <mat-grid-tile class="etape">
-      <div class="stepBox">
-        <h1>3</h1>
-        <p>Votre commande livrée en une minute</p>
-      </div>
-    </mat-grid-tile>
-  </mat-grid-list>
-</div>
+      <mat-grid-tile class="etape">
+        <div class="stepBox">
+          <div class="cont">
+            <img src="assets/images/img2.jpg">
+            <h3>NOURRITURE FRAICHE GUARANTIE</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+      </mat-grid-tile>
+
+      <mat-grid-tile class="etape">
+        <div class="stepBox">
+          <div class="cont">
+            <img src="assets/images/img1.jpg">
+
+            <h3>LARGE GAMME DE PRODUIT</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+      </mat-grid-tile>
+
+    </mat-grid-list>
+  </div>
 
   <mat-grid-list class="mylist1" cols="4" rowHeight="270px">
 
     <mat-grid-tile [colspan]="2" [rowspan]="1">
-      <img alt="" height="auto" src="assets/images/cuisinierResto.jpg" width="100%">
+      <img alt="" height="auto" src="assets/images/chef.jpg" width="100%">
     </mat-grid-tile>
 
     <mat-grid-tile [colspan]="2" [rowspan]="1">
       <div class="grid-description">
         <h1>Ajouter votre restaurant</h1>
-        <p>Exposez vos plats délicieux, attirez de nouveaux clients et gérez facilement votre menu en ligne.</p>
-        <button color="accent" mat-button>Rejoignez-nous dès aujourd'hui!</button>
+        <p>Exposez vos plats délicieux, attirez de nouveaux clients et gérez facilement votre menu en ligne.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <button color="accent" mat-button class="btn">Rejoignez-nous dès aujourd'hui!</button>
       </div>
     </mat-grid-tile>
 
@@ -55,8 +79,9 @@
       <div class="grid-description">
         <h1>Devenir Livreur</h1>
         <p>Rejoignez notre équipe de livreurs dédiés et contribuez à offrir une expérience de livraison exceptionnelle à
-          nos clients.</p>
-        <button color="accent" mat-button> Inscrivez-vous dès maintenant</button>
+          nos clients.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <button color="accent" mat-button class="btn"> Inscrivez-vous dès maintenant</button>
       </div>
     </mat-grid-tile>
     <mat-grid-tile [colspan]="2" [rowspan]="1">
@@ -65,3 +90,11 @@
 
   </mat-grid-list>
 </div>
+<footer>
+  <h1>About Us</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+    nisi ut aliquip ex ea commodo consequat.</p>
+
+</footer>
