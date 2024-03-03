@@ -5,16 +5,14 @@
       <div class="content-items">
         <h1 class="slogan">Explore les restaurants à proximité</h1>
         <p>Livre la nourriture depuis plus de 10ans </p>
-        <button mat-s troked-button class="btn-overlay custom-yellow">Débute ici</button>
+        <button mat-stroked-button class="btn-overlay custom-yellow">Débute ici</button>
       </div>
 
     </div>
   </div>
-
   <div class="container">
     <h1 class="text"> ~ Commander votre nourriture préferée<span class="highlight">  chez vous ~</span></h1>
-
-    <mat-grid-list cols="3" rowHeight="420px">
+    <mat-grid-list class="contList" cols="3" rowHeight="100vh">
 
       <mat-grid-tile class="etape">
         <div class="stepBox">
@@ -59,10 +57,10 @@
     </mat-grid-list>
   </div>
 
-  <mat-grid-list class="mylist1" cols="4" rowHeight="270px">
+  <mat-grid-list class="mylist1" cols="4" rowHeight="100vh">
 
     <mat-grid-tile [colspan]="2" [rowspan]="1">
-      <img alt="" height="auto" src="assets/images/chef.jpg" width="100%">
+      <img alt="" height="100%" src="assets/images/chef.jpg" width="100%">
     </mat-grid-tile>
 
     <mat-grid-tile [colspan]="2" [rowspan]="1">
@@ -85,14 +83,30 @@
       </div>
     </mat-grid-tile>
     <mat-grid-tile [colspan]="2" [rowspan]="1">
-      <img alt="" height="auto" src="assets/images/livreur.jpg" width="100%">
+      <img alt="" height="100%" src="assets/images/livreur.jpg" width="100%">
     </mat-grid-tile>
 
   </mat-grid-list>
+
+  <mat-grid-list cols="1" class="enjoy"  rowHeight="100vh">
+    <mat-grid-tile >
+      <div class="divEnjoy">
+      <h1>Enjoy your food</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+
 </div>
 <footer>
   <h1>About Us</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+    nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
     nisi ut aliquip ex ea commodo consequat.</p>

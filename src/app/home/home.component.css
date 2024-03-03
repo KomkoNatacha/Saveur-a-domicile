@@ -43,13 +43,7 @@
 }
 
 
-.mat-accent {
 
-  font-family: ComicSansMS, serif;
-  background: rgba(0, 0, 0, 0.6);
-  color: #ffffff;
-  border-color: #f7b34f;
-}
 
 
 p {
@@ -66,8 +60,8 @@ p {
 }
 
 
-.mat-grid-tile {
-  background: rgba(0,0,0,0.6);
+.mylist1 .mat-grid-tile {
+  background: url('../../assets/images/fond3.jpg') center center/cover no-repeat;
 
 }
 
@@ -75,15 +69,15 @@ p, h1 {
   color: #ffffff;
   font-family: ComicSansMS, serif;
 
+
 }
 
 .text {
   padding-top: 15px;
   text-align: center;
-  color: black;
+  color: #ffffff;
   font-size: 25px;
   font-family: ComicSansMS, serif;
-
 }
 
 .highlight {
@@ -91,13 +85,11 @@ p, h1 {
   font-weight: bold;
   font-style: italic;
   font-family: ComicSansMS, serif;
-
 }
 
 .mat-grid-list {
-  padding-top: 30px;
+/*padding-top: 30px;*/
 }
-
 
 
 .etape {
@@ -110,15 +102,16 @@ p, h1 {
 }
 
 .stepBox {
-  display : inline-block;
+  display: inline-block;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+
 }
 
 
-.cont img , .cont h3, .cont p {
+.cont img, .cont h3, .cont p {
   display: block;
   max-width: 100%;
   height: auto;
@@ -127,35 +120,73 @@ p, h1 {
   font-family: ComicSansMS, serif;
   padding: 20px;
 
+
 }
 
 .cont h3, .cont p {
   padding: 0 20px;
+
 }
 
-
-.etape{
-  background: rgb(255, 255, 255);
-}
-
-.cont h3{
+.cont h3 {
   color: #f7b34f;
   font-size: 20px;
-
-
 }
 
-.container .mat-grid-list{
+.container .mat-grid-list {
   margin-left: 80px;
   margin-right: 80px;
+
 }
 
 footer {
-  background: rgba(0, 0, 0, 0.6);
+  background: url('../../assets/images/background.png') ;
   color: white;
 }
 
 .cont p {
-  color: #000000;
+  color: #ffffff;
+}
 
+.grid-description {
+  text-align: center;
+}
+
+
+.enjoy {
+  background: url('../../assets/images/background.png') center center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divEnjoy {
+  border: 2px solid white;
+  width: 40%;
+  padding: 4rem;
+}
+
+.divEnjoy h1{
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.divEnjoy p{
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 30px;
+}
+.container{
+  background: #161616;
+
+}
+
+.mat-accent {
+  font-family: ComicSansMS, serif;
+  background: white;
+  color: #f7b34f;
 }
