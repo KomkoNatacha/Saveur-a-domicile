@@ -1,0 +1,47 @@
+.cont-signin{
+  background: url('../../assets/images/fondSignIn.jpg')center center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+mat-card{
+  max-width: 600px;
+  margin: 2em auto;
+  text-align: center;
+  max-height: 600px;
+  background: rgb(208, 204, 204);
+
+
+}
+.header{
+  text-align: center;
+}
+.full-wi{
+  width: 80%;
+}
+
+.forgot-passw {
+  padding-left: 0px;
+}
+.email-inp{
+  padding-top: 10px;
+
+  }
+.aLink{
+  float: right;
+  padding-right: 60px;
+  text-decoration: none;
+
+}
+.yellow-button{
+  background: #f7b34f;
+}
+
+.label {
+ color: #020202;
+}
+
+.input {
+  color: black;
+}

@@ -13,8 +13,14 @@ import {MatIcon} from "@angular/material/icon";
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { HomeComponent } from './home/home.component';
-import {MatCard, MatCardActions, MatCardContent, MatCardTitle} from "@angular/material/card";
+import {MatCard, MatCardActions, MatCardContent, MatCardTitle,MatCardModule} from "@angular/material/card";
 import {MatGridList, MatGridListModule, MatGridTile} from "@angular/material/grid-list";
+import {MatIconModule} from "@angular/material/icon";
+
+import {MatInputModule} from "@angular/material/input";
+
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+
 
 @NgModule({
   declarations: [
@@ -38,6 +44,11 @@ import {MatGridList, MatGridListModule, MatGridTile} from "@angular/material/gri
     MatGridList,
     MatGridTile,
     MatGridListModule,
+    MatCardModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    MatIconModule,
+    FormsModule
 
   ],
   providers: [
