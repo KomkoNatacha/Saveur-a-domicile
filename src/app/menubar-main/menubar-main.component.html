@@ -1,12 +1,23 @@
 <mat-toolbar class="mat-elevation-z8 custom-toolbar" >
 
 
-  <img src="assets/images/logoPrincipal.png" class="logo">
+  <img src="assets/images/logoPrincipalBlanc.jpg" alt="homeImage" class="logo">
   <span class="espace"></span>
 
-  <button [class.active-button]="isHomeActive" class="home-info custom-button" routerLink="" mat-button>Accueil</button>
-  <button routerLink="signin" class="custom-button" mat-button>Se connecter</button>
-  <button routerLink="signup" class="custom-button" mat-button> S'inscrire</button>
+  <div class="nav">
+    <button [class.active-button]="isHomeActive" class="home-info custom-button" routerLink="" mat-button>Accueil</button>
+    <button routerLink="signin" class="custom-button" mat-button>Se connecter</button>
+    <button routerLink="signup" class="custom-button" mat-button>S'inscrire</button>
+  </div>
 
+  <div class="icon-container">
+    <button class="custom-button" mat-icon-button>
+      <mat-icon aria-hidden="false" aria-label="Search icon">search</mat-icon>
+    </button>
+
+    <button class="custom-button" mat-icon-button>
+      <mat-icon aria-hidden="false" aria-label="Shopping cart icon">shopping_cart</mat-icon>
+    </button>
+  </div>
 
 </mat-toolbar>

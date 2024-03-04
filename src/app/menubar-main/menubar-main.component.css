@@ -1,54 +1,63 @@
-.espace{
-  flex:  1 ;
+.espace {
+  flex: 1;
 }
-.logo{
-  width: 260px;
+
+.logo {
+  width: 200px;
   height: auto;
   margin: 20px;
   box-sizing: content-box;
-}
-.custom-toolbar{
+  display: flex;
   position: absolute;
-  top: 50px;
-  left: 0;
+
+}
+
+.custom-toolbar {
+  display: flex;
+  position: fixed;
   width: 100%;
-  padding: 10px 90px;
-  background: rgba(0,0,0,0.0);
+  background: #ffffff;
   height: 80px;
-  box-shadow: none;
+  box-shadow: snow;
   z-index: 1000;
-  border-top: 1px solid #ffffff;
   margin-bottom: 15px;
-}
-button{
-  font-size: 21px;
-  font-family: ComicSansMS, serif;
-
-}
-.custom-toolbar .custom-button:hover  {
-  background-color: #f7b34f;
-  border-radius: 8px;
-}
 
 
-.active-button::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #f7b34f;
+}
+
+button {
+  font-size: 17px;
+  font-family: Arial, sans-serif;
+  margin: 4px;
+
+}
+
+.custom-toolbar .custom-button:hover {
+  background-color: #d31e1e;
+  color: white;
+}
+
+.custom-toolbar .custom-button,
+.custom-toolbar {
+  color: black;
+}
+
+.custom-toolbar .home-info.active-button {
+  background-color: #d31e1e;
+  color: white;
+}
+
+.icon-container .custom-button {
+  margin-left: 10px;
+}
+
+.icon-container .custom-button:hover {
+  margin-left: 10px;
+
+}
+.nav{
   position: absolute;
-  bottom: 0;
   left: 0;
+  right: 0;
+  text-align: center;
 }
-.active-button::before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #f7b34f;
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-}
-

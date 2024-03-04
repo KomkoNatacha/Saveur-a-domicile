@@ -1,39 +1,61 @@
 <div class="cont-signin" xmlns="http://www.w3.org/1999/html">
 <mat-card>
   <mat-card-content>
+    <div class="contSIn">
     <div class="header">
       <h2>CONNEXION</h2>
+      <div class="social-icon">
+        <button mat-icon-button >
+          <mat-icon>facebook</mat-icon>
+        </button>
+        <button mat-icon-button >
+          <mat-icon>facebook</mat-icon>
+        </button>
+        <button mat-icon-button >
+          <mat-icon>messenger</mat-icon>
+        </button>
+        <button mat-icon-button >
+          <mat-icon>facebook</mat-icon>
+        </button>
+
+      <div class="form-container">
+        <form (ngSubmit)="onSignIn()" name="signInForm" [formGroup]="signInForm">
+          <div class="email-inp">
+            <mat-form-field class="full-wi" appearance="outline" >
+              <mat-label  class="label">Email</mat-label>
+              <input formControlName = "email" matInput required />
+              <mat-error *ngIf="signInForm?.get('email')?.errors?.['required']">
+                Adresse email requis
+              </mat-error>
+            </mat-form-field>
+          </div>
+
+          <div>
+            <span class="aLink"> Mot de passe oublié</span>
+            <mat-form-field class="full-wi" appearance="outline">
+              <mat-label class="label">Mot de passe</mat-label>
+              <input class="input"  formControlName="password" matInput [type]="hide ? 'password' : 'text'" required/>
+              <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide Password'" [attr.aria-pressed]="hide">
+                <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+              </button>
+
+              <mat-error *ngIf="signInForm?.get('password')?.errors?.['required']">
+                Mot de passe requis
+              </mat-error>
+
+            </mat-form-field>
+          </div>
+          <button mat-flat-button color="primary" class="red-button">SE CONNECTER</button>
+
+        </form>
+      </div>
+
+
     </div>
-      <form (ngSubmit)="onSignIn()" name="signInForm" [formGroup]="signInForm">
-        <div class="email-inp">
-          <mat-form-field class="full-wi" appearance="outline">
-            <mat-label class="label">Email</mat-label>
-            <input class="input" formControlName = "email" matInput required/>
-            <mat-error *ngIf="signInForm?.get('email')?.errors?.['required']">
-              Adresse email requis
-            </mat-error>
-          </mat-form-field>
-        </div>
+    </div>
+      <div class="demiCircle"></div>
 
-        <div>
-          <span class="aLink"> Mot de passe oublié</span>
-          <mat-form-field class="full-wi" appearance="outline">
-            <mat-label class="label">Mot de passe</mat-label>
-            <input class="input"  formControlName="password" matInput [type]="hide ? 'password' : 'text'" required/>
-            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide Password'" [attr.aria-pressed]="hide">
-              <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
-            </button>
-            <mat-error *ngIf="signInForm?.get('password')?.errors?.['required']">
-              Mot de passe requis
-            </mat-error>
-
-          </mat-form-field>
-        </div>
-        <button mat-flat-button color="primary" class="yellow-button">Login</button>
-
-
-      </form>
-
+    </div>
   </mat-card-content>
 </mat-card>
 </div>

@@ -1,23 +1,70 @@
 <div class="mat-body">
-  <div class="photo-container">
-    <img alt="" height="40%" src="assets/images/imgHome.jpg" width="100%">
-    <div class="overlay-content">
-      <div class="content-items">
-        <h1 class="slogan">Explore les restaurants à proximité</h1>
-        <p>Livre la nourriture depuis plus de 10ans </p>
-        <button mat-stroked-button class="btn-overlay custom-yellow">Débute ici</button>
+
+  <!-- Slider home  -->
+  <mat-grid-list class="mylist" cols="4" rowHeight="100vh">
+    <mat-grid-tile [colspan]="2" [rowspan]="1">
+      <div class="slideTitle">
+        <h2>Explore les restaurants à proximité</h2>
+        <h3>Burger</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud. </p>
+        <button color="accent" mat-button class="btn-comander">Commandez maintenant !</button>
       </div>
+    </mat-grid-tile>
 
-    </div>
-  </div>
+    <mat-grid-tile [colspan]="2" [rowspan]="1">
+      <img class="imgSlide" alt="" height="80%"  src="assets/images/home-img-3.png" width="100%">
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <mat-grid-list class="mylist" cols="4" rowHeight="100vh">
+    <mat-grid-tile [colspan]="2" [rowspan]="1">
+      <div class="slideTitle">
+        <h2>Explore les restaurants à proximité</h2>
+        <h3>Pizza</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud. </p>
+        <button color="accent" mat-button class="btn-comander">Commandez maintenant !</button>
+      </div>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="2" [rowspan]="1">
+      <img class="imgSlide" alt="" height="80%"  src="assets/images/slideImg1.png" width="100%">
+    </mat-grid-tile>
+
+  </mat-grid-list>
+
+  <mat-grid-list class="mylist" cols="4" rowHeight="100vh">
+    <mat-grid-tile [colspan]="2" [rowspan]="1">
+      <div class="slideTitle">
+        <h2>Explore les restaurants à proximité</h2>
+        <h3>Sushi</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud. </p>
+        <button color="accent" mat-button class="btn-comander">Commandez maintenant !</button>
+      </div>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="2" [rowspan]="1">
+      <img class="imgSlide" alt="" height="80%"  src="assets/images/slideImg1.png" width="100%">
+    </mat-grid-tile>
+
+  </mat-grid-list>
+
+
+
+
   <div class="container">
-    <h1 class="text"> ~ Commander votre nourriture préferée<span class="highlight">  chez vous ~</span></h1>
-    <mat-grid-list class="contList" cols="3" rowHeight="100vh">
 
+    <mat-grid-list class="contList" cols="3" rowHeight="100vh">
+        <h1 class="text"> ~ Commander votre nourriture préferée<span class="highlight">  chez vous ~</span></h1>
       <mat-grid-tile class="etape">
         <div class="stepBox">
           <div class="cont">
-            <img src="assets/images/img3.jpg">
+            <img  src="assets/images/img3.jpg">
             <h3> NIVEAU PROFESSIONNEL</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -31,7 +78,7 @@
         <div class="stepBox">
           <div class="cont">
             <img src="assets/images/img2.jpg">
-            <h3>NOURRITURE FRAICHE GUARANTIE</h3>
+            <h3>NOURRITURE FRAICHE </h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -73,18 +120,6 @@
       </div>
     </mat-grid-tile>
 
-    <mat-grid-tile [colspan]="2" [rowspan]="1">
-      <div class="grid-description">
-        <h1>Devenir Livreur</h1>
-        <p>Rejoignez notre équipe de livreurs dédiés et contribuez à offrir une expérience de livraison exceptionnelle à
-          nos clients.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <button color="accent" mat-button class="btn"> Inscrivez-vous dès maintenant</button>
-      </div>
-    </mat-grid-tile>
-    <mat-grid-tile [colspan]="2" [rowspan]="1">
-      <img alt="" height="100%" src="assets/images/livreur.jpg" width="100%">
-    </mat-grid-tile>
 
   </mat-grid-list>
 
@@ -102,13 +137,41 @@
 
 </div>
 <footer>
-  <h1>About Us</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-    nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-    nisi ut aliquip ex ea commodo consequat.</p>
+  <mat-grid-list class="contList" cols="3" rowHeight="400px">
+    <mat-grid-tile  >
+      <div class="grid-footer">
+      <h2>Localisation</h2>
+      <p>Trois-rivieres</p>
+      <p>Montreal</p>
+      <p>Gatineau</p>
+      <p>Quebec</p>
+      </div>
+    </mat-grid-tile>
+
+    <mat-grid-tile >
+      <div class="grid-footer">
+
+      <h2>Suivez-nous</h2>
+      <p>Facebook</p>
+      <p>Instagram</p>
+      <p>Twiter</p>
+      <p>Tik-tok</p>
+      </div>
+    </mat-grid-tile>
+
+    <mat-grid-tile >
+      <div class="grid-footer">
+
+      <h2>Coordonnées</h2>
+      <p>saveuradomicile&#64;gmail.com</p>
+      <p>+1 873 0120 1225</p>
+      <p>+1 873 5635 1852</p>
+      </div>
+
+    </mat-grid-tile>
+
+  </mat-grid-list>
+  <hr style="border-top: 1px solid #ccc; margin: 20px 0;">
+  <div class="div-foot" style="text-align: center;">Copyright &#64; <span class="year">2024</span></div>
 
 </footer>

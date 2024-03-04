@@ -1,95 +1,60 @@
-
-.photo-container {
-  position: relative;
+.slideTitle h2{
+  color: #d31e1e;
+  font-family: Arial, sans-serif;
 }
-
-
-.overlay-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.content-items {
-  display: grid;
-  justify-items: center;
-}
-
-.slogan {
+.slideTitle h3{
   font-size: 50px;
-  font-family: ComicSansMS, serif;
+  font-family: Arial, sans-serif;
+  color: #136963;
 
 }
-
-.btn-overlay {
-  margin-top: 30px;
-  font-size: 30px;
-  font-family: ComicSansMS, serif;
-  width: 250px;
-  height: 70px;
-
-}
-
-.content-items p {
-  font-family: ComicSansMS, serif;
+.slideTitle p{
+  font-family: Arial, sans-serif;
+  color: #625e5e;
   font-size: 20px;
 
 }
 
+.slideTitle{
+  margin: 20px;
+  padding: 50px;
+  font-weight: lighter;
+}
 
+.mat-grid-tile .imgSlide {
+  width: 500px;
+  padding-top: 60px;
+}
 
-
-
+.slideTitle button{
+  color: #ffffff;
+  background: #136963;
+}
 p {
   font-size: 15px;
 
 
 }
 
-.custom-yellow {
-  background: rgba(0, 0, 0, 0.6);
-  color: #ffffff;
-  border-color: #f7b34f;
-
-}
 
 
-.mylist1 .mat-grid-tile {
-  background: url('../../assets/images/fond3.jpg') center center/cover no-repeat;
 
-}
-
-p, h1 {
-  color: #ffffff;
-  font-family: ComicSansMS, serif;
-
-
-}
 
 .text {
-  padding-top: 15px;
+  padding-top: 33px;
   text-align: center;
-  color: #ffffff;
+  color: #000000;
   font-size: 25px;
   font-family: ComicSansMS, serif;
 }
 
 .highlight {
-  color: #f7b34f;
+  color:#d31e1e;
   font-weight: bold;
   font-style: italic;
   font-family: ComicSansMS, serif;
 }
 
-.mat-grid-list {
-/*padding-top: 30px;*/
-}
 
 
 .etape {
@@ -97,7 +62,6 @@ p, h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
 
 }
 
@@ -111,16 +75,21 @@ p, h1 {
 }
 
 
-.cont img, .cont h3, .cont p {
+.cont h3, .cont p {
   display: block;
   max-width: 100%;
   height: auto;
-  margin-bottom: 10px;
-  text-align: center;
   font-family: ComicSansMS, serif;
   padding: 20px;
 
 
+}
+.cont img{
+  display: block;
+  max-width: 90%;
+  height: auto;
+  padding: 15px;
+  align-items: center;
 }
 
 .cont h3, .cont p {
@@ -129,7 +98,7 @@ p, h1 {
 }
 
 .cont h3 {
-  color: #f7b34f;
+  color:#d31e1e;
   font-size: 20px;
 }
 
@@ -140,21 +109,23 @@ p, h1 {
 }
 
 footer {
-  background: url('../../assets/images/background.png') ;
-  color: white;
+  background: white;
+}
+footer p ,footer h1 {
+  color: black;
 }
 
 .cont p {
-  color: #ffffff;
+  color: #000000;
 }
 
 .grid-description {
-  text-align: center;
+  padding: 15px;
 }
 
 
 .enjoy {
-  background: url('../../assets/images/background.png') center center/cover no-repeat;
+  background: url('../../assets/images/fond5.jpg')center center/cover no-repeat;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -162,31 +133,68 @@ footer {
 }
 
 .divEnjoy {
-  border: 2px solid white;
-  width: 40%;
+  border: 2px solid #000000;
+  width: 32%;
+  height: 40%;
   padding: 4rem;
 }
 
 .divEnjoy h1{
-  color: white;
+  color: #000000;
   font-size: 30px;
   text-align: center;
   padding: 1rem 0;
 }
 
 .divEnjoy p{
-  color: white;
+  color: #000000;
   font-size: 1.5rem;
   text-align: center;
-  line-height: 30px;
+  line-height: 25px;
+}
+
+
+.grid-footer{
+  text-align: center;
+}
+.div-foot{
+  padding-bottom: 30px;
+  font-size: 20px;
+}
+.year{
+  color: #d31e1e;
 }
 .container{
-  background: #161616;
+  background: rgba(239, 239, 239, 0.84);
+}
+.cont{
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: snow;
+  margin: 20px;
+  border-radius: 10px;
+
+}
+
+.grid-description h1{
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #136963;
+  font-size: 30px;
+
+}
+.grid-description p{
+  color: #625e5e;
+  font-size: 16px;
 
 }
 
 .mat-accent {
-  font-family: ComicSansMS, serif;
-  background: white;
-  color: #f7b34f;
+  font-family: Arial, sans-serif;
+  background : #d31e1e;
+  color: #ffffff;
+}
+
+.mat-accent:hover{
+
 }

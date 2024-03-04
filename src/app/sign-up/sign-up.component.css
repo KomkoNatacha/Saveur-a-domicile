@@ -1,0 +1,30 @@
+.cont-signup {
+  background: #136963;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+mat-card {
+  width: 600px;
+  margin: 2em auto;
+  text-align: center;
+  background: rgb(208, 204, 204);
+  top: 150px;
+}
+
+.header {
+  text-align: center;
+}
+
+.full-width {
+  width: 80%;
+}
+
+.yellow-button {
+  background: #f7b34f;
+}
+
+.label {
+  color: #625e5e;
+}

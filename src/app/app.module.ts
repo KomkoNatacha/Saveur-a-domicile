@@ -15,11 +15,14 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { HomeComponent } from './home/home.component';
 import {MatCard, MatCardActions, MatCardContent, MatCardTitle,MatCardModule} from "@angular/material/card";
 import {MatGridList, MatGridListModule, MatGridTile} from "@angular/material/grid-list";
-import {MatIconModule} from "@angular/material/icon";
+import {MatIconModule} from '@angular/material/icon';
+import {MatTabsModule} from '@angular/material/tabs';
 
-import {MatInputModule} from "@angular/material/input";
+import {MatInputModule} from '@angular/material/input';
+import {CommonModule} from '@angular/common';
 
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+
 
 
 @NgModule({
@@ -48,7 +51,9 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     MatInputModule,
     ReactiveFormsModule,
     MatIconModule,
-    FormsModule
+    FormsModule,
+    MatTabsModule,
+    CommonModule
 
   ],
   providers: [

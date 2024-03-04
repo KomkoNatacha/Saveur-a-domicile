@@ -1,22 +1,21 @@
 .cont-signin{
-  background: url('../../assets/images/fondSignIn.jpg')center center/cover no-repeat;
+  background: rgba(239, 239, 239, 0.84);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 mat-card{
-  max-width: 600px;
-  margin: 2em auto;
+  width: 75%;
   text-align: center;
   max-height: 600px;
-  background: rgb(208, 204, 204);
-
-
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: snow;
+  margin: 40px;
+  border-radius: 10px;
 }
-.header{
-  text-align: center;
-}
+
 .full-wi{
   width: 80%;
 }
@@ -34,14 +33,39 @@ mat-card{
   text-decoration: none;
 
 }
-.yellow-button{
-  background: #f7b34f;
+.red-button{
+  background: #d31e1e;
+  padding: 15px;
 }
 
 .label {
- color: #020202;
+ color: #625e5e;
 }
 
-.input {
-  color: black;
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contSIn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header{
+  flex: 1;
+}
+.demiCircle{
+  flex: 1;
+  height: 350px;
+  background: #d31e1e;
+  border-radius: 30% 0 0 30% / 80%;
+}
+.mat-form-field .mat-label,
+.mat-form-field .mat-input-element {
+  color: black !important;
+}
+.custom-input .mat-form-field-label {
+  color: black !important;
 }
