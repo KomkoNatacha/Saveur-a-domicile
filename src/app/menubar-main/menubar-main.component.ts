@@ -1,20 +1,20 @@
-import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute} from "@angular/router";
+import {Component} from '@angular/core';
+import { NavigationEnd, Router} from "@angular/router";
 
 @Component({
   selector: 'app-menubar-main',
   templateUrl: './menubar-main.component.html',
   styleUrl: './menubar-main.component.css'
 })
-export class MenubarMainComponent implements  OnInit{
+export class MenubarMainComponent {
 
-  isHomeActive: boolean = false;
+  currentRoute: string = '';
 
-  constructor(private  route : ActivatedRoute) {}
-
-  ngOnInit() {
-    this.route.url.subscribe(urlSegments =>{
-      this.isHomeActive = urlSegments[0].path=='';
-    } )
+  constructor(private router: Router) {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.currentRoute = event.url;
+      }
+    });
   }
 }
