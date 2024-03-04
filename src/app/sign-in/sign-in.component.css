@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  padding-top: 25px;
 }
 mat-card{
   width: 75%;
@@ -20,11 +21,9 @@ mat-card{
   width: 80%;
 }
 
-.forgot-passw {
-  padding-left: 0px;
-}
+
 .email-inp{
-  padding-top: 10px;
+  padding-top: 1rem;
 
   }
 .aLink{
@@ -59,13 +58,15 @@ mat-card{
 .demiCircle{
   flex: 1;
   height: 350px;
-  background: #d31e1e;
   border-radius: 30% 0 0 30% / 80%;
+  background: url("../../assets/images/eatgirl2.jpg")center center/cover no-repeat;
 }
-.mat-form-field .mat-label,
-.mat-form-field .mat-input-element {
-  color: black !important;
+
+footer {
+  background: white;
 }
-.custom-input .mat-form-field-label {
-  color: black !important;
+.div-foot{
+  padding-bottom: 30px;
+  padding-top: 20px;
+  font-size: 18px;
 }
