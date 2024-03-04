@@ -22,6 +22,8 @@ import {MatInputModule} from '@angular/material/input';
 import {CommonModule} from '@angular/common';
 
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { RestaurantHomeComponent } from './restaurant-home/restaurant-home.component';
+import { MenuRestauHomepageComponent } from './menu-restau-homepage/menu-restau-homepage.component';
 
 
 
@@ -31,7 +33,9 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     MenubarMainComponent,
     SignInComponent,
     SignUpComponent,
-    HomeComponent
+    HomeComponent,
+    RestaurantHomeComponent,
+    MenuRestauHomepageComponent
   ],
   imports: [
     BrowserModule,

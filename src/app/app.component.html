@@ -1,4 +1,10 @@
-<app-menubar-main></app-menubar-main>
+
+<header *ngIf="isClientHomePage()">
+  <app-menubar-main></app-menubar-main>
+</header>
+<header *ngIf="isRestaurantHomePage()">
+  <app-menu-restau-homepage></app-menu-restau-homepage>
+</header>
 <div>
-<router-outlet></router-outlet>
+  <router-outlet></router-outlet>
 </div>

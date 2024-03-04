@@ -1,4 +1,5 @@
 import {Component, NgModule} from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-root',
@@ -8,4 +9,15 @@ import {Component, NgModule} from '@angular/core';
 })
 export class AppComponent {
   title = 'eat-project';
+
+  constructor(private router: Router) {}
+
+  isClientHomePage(): boolean {
+    const currentUrl = this.router.url;
+    return currentUrl === '/' || currentUrl === '/signin' || currentUrl === '/signup';
+  }
+
+  isRestaurantHomePage(): boolean {
+    return this.router.url === '/home-restaurant';
+  }
 }
