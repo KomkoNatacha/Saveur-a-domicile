@@ -1,0 +1,92 @@
+.carousole-container{
+  position: relative;
+  margin: auto;
+  text-align: center;
+  border-radius: 15px;
+  border-shadow: 0 8px 16px #dce1e1;
+}
+.carousole-container img.image-active{
+  display: block;
+  width: 100%;
+  height: 800px;
+}
+.carousole-container img{
+  display: none;
+  border-radius: 15px;
+}
+
+.carousel-dot-container{
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+.dot{
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: opacity 0.6s ease;
+  opacity: 0.5;
+
+}
+.active,
+.dot :hover{
+  opacity: 1;
+}
+.fade{
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from{
+    opacity: 0.5;
+  }
+  to{
+    opacity: 1;
+  }
+}
+.btn-carousol{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  padding: 0;
+  color: white;
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+}
+.btn-prev{
+  left: 0;
+}
+.icon-couresel{
+  color: #fff;
+  opacity: 0.5;
+  transition: all 0.15s ease;
+
+}
+.icon-couresel:hover {
+  opacity: 0.9;
+}
+
+.icon-couresel:active{
+  opacity: 0.5;
+}
+.icon-prev,.icon-next{
+  font-size: 35px;
+}
+.btn-next{
+  position: absolute;
+  right: 0;
+}
