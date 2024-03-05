@@ -24,6 +24,9 @@ import {CommonModule} from '@angular/common';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { RestaurantHomeComponent } from './restaurant-home/restaurant-home.component';
 import { MenuRestauHomepageComponent } from './menu-restau-homepage/menu-restau-homepage.component';
+import { RestaurantMenuComponent } from './menu-restaurant/restaurant-menu/restaurant-menu.component';
+import { CourouselMenuRestaurantComponent } from './menu-restaurant/courousel-menu-restaurant/courousel-menu-restaurant.component';
+import { MenuRestaurantModule } from './menu-restaurant/menu-restaurant.module';
 
 
 
@@ -35,11 +38,10 @@ import { MenuRestauHomepageComponent } from './menu-restau-homepage/menu-restau-
     SignUpComponent,
     HomeComponent,
     RestaurantHomeComponent,
-    MenuRestauHomepageComponent
+    MenuRestauHomepageComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     MatToolbar,
     MatButton,
     MatIcon,
@@ -57,7 +59,10 @@ import { MenuRestauHomepageComponent } from './menu-restau-homepage/menu-restau-
     MatIconModule,
     FormsModule,
     MatTabsModule,
-    CommonModule
+    CommonModule,
+    MenuRestaurantModule,
+    AppRoutingModule,
+
 
   ],
   providers: [

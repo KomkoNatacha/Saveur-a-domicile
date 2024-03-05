@@ -6,6 +6,7 @@
   width: 200px;
   height: auto;
   margin: 20px;
+  padding-right: 30px;
   box-sizing: content-box;
   display: flex;
   position: absolute;
@@ -13,38 +14,36 @@
 }
 
 .custom-toolbar {
-  display: flex;
-  position: fixed;
   width: 100%;
   background: #ffffff;
   height: 80px;
   box-shadow: snow;
   z-index: 1000;
-  margin-bottom: 15px;
 
 
 }
 
-button {
+.nav button {
   font-size: 17px;
   font-family: Arial, sans-serif;
   margin: 4px;
-
+  color: black;
 }
 
 .custom-toolbar .custom-button:hover {
   background-color: #d31e1e;
-  color: white;
 }
 
 .custom-toolbar .custom-button{
   color: black;
 }
 
-.custom-toolbar .nav .active-button  {
+.nav .active-button  {
   background-color: #d31e1e;
   color: white;
+  font-weight: bold;
 }
+
 
 .icon-container .custom-button {
   margin-left: 10px;

@@ -4,17 +4,22 @@ import {HomeComponent} from "./home/home.component";
 import {SignInComponent} from "./sign-in/sign-in.component";
 import {SignUpComponent} from "./sign-up/sign-up.component";
 import {RestaurantHomeComponent} from "./restaurant-home/restaurant-home.component";
+import {RestaurantMenuComponent} from "./menu-restaurant/restaurant-menu/restaurant-menu.component";
 
 const routes: Routes = [
-  {path: '', component : HomeComponent},
+  {path: 'home', component : HomeComponent},
   {path: 'signin', component : SignInComponent},
   {path: 'signup', component : SignUpComponent},
+  { path: '', redirectTo: 'home', pathMatch: "full" },
+  { path: '**', redirectTo: 'home', pathMatch: "full" },
   {path: 'home-restaurant', component : RestaurantHomeComponent}
 
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes),
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -8,13 +8,11 @@ import { NavigationEnd, Router} from "@angular/router";
 })
 export class MenubarMainComponent {
 
-  currentRoute: string = '';
 
   constructor(private router: Router) {
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
-        this.currentRoute = event.url;
-      }
-    });
+  }
+
+  isLinkActive(url: string): boolean {
+    return this.router.url === url;
   }
 }

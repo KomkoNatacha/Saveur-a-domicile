@@ -1,11 +1,12 @@
 <mat-toolbar class="mat-elevation-z8 custom-toolbar">
-  <img src="assets/images/logoPrincipalBlanc.jpg" alt="homeImage" class="logo">
+  <img src="assets/images/logoPrincipalBlanc.jpg" alt="homeImage" class="logo" [routerLink]="['/menu']">
   <span class="espace"></span>
 
   <div class="nav">
-    <button [ngClass]="{ 'active-button': currentRoute === '/', 'custom-button': true }" routerLink="/" mat-button>Accueil</button>
-    <button [ngClass]="{ 'active-button': currentRoute === '/signin', 'custom-button': true }" routerLink="/signin" mat-button>Se connecter</button>
-    <button [ngClass]="{ 'active-button': currentRoute === '/signup', 'custom-button': true }" routerLink="/signup" mat-button>S'inscrire</button>
+    <button mat-button [routerLink]="['/home']" [ngClass]="{ 'active-button': isLinkActive('/home') }">Accueil</button>
+    <button mat-button [routerLink]="['/menu']" routerLinkActive ='active-button' [routerLinkActiveOptions]= "{exact : true}" >Menu</button>
+    <button mat-button [routerLink]="['/signin']" routerLinkActive ='active-button' [routerLinkActiveOptions]= "{exact : true}" >Se connecter</button>
+    <button mat-button [routerLink]="['/signup']" routerLinkActive ='active-button' [routerLinkActiveOptions]= "{exact : true}" >S'inscrire</button>
   </div>
 
   <div class="icon-container">
