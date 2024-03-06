@@ -1,0 +1,15 @@
+.star-container{
+  overflow: hidden;
+  cursor: pointer;
+}
+.star-wrapper{
+  width: 125px;
+}
+.star-wrapper mat-icon{
+  font-size: 1.7rem;
+  color: mediumseagreen;
+}
+
+mat-icon{
+  width: 25px;
+}
