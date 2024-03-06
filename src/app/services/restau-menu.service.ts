@@ -8,12 +8,21 @@ import {IMenuItem} from "../models/menu";
 })
 export class RestauMenuService {
   private readonly MENU_API_URL = 'api/menu-item.json'
+  private readonly SOUS_MENU_API_URL = 'api/sous-menu.json'
+
 
   constructor(private http : HttpClient) { }
 
   getListMenus(): Observable<IMenuItem[]>{
     return this.http.get<IMenuItem[]>(this.MENU_API_URL).pipe(
-      tap(menu => console.log("hotels: ", menu)),
+      tap(menu => console.log("Liste des menus: ", menu)),
+      catchError(this.handleError)
+    )
+  }
+
+  getListSousMenus(): Observable<IMenuItem[]>{
+    return this.http.get<IMenuItem[]>(this.SOUS_MENU_API_URL).pipe(
+      tap(menu => console.log("Liste des sous menus: ", menu)),
       catchError(this.handleError)
     )
   }

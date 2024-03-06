@@ -73,20 +73,20 @@
 
   <div class="box-container">
 
-    <div class="box">
+    <div class="box" *ngFor="let sousMenu of souMenus">
       <div class="image">
-        <img src="assets/menu-image/menu-1.jpg" alt="">
-          <mat-icon class="fas fa-heart">favorite</mat-icon>
+        <img [src]="sousMenu.imageUrl" alt="">
+        <mat-icon class="fas fa-heart">favorite</mat-icon>
       </div>
       <div class="content">
 
-          <app-star-rating [rating]="4"></app-star-rating>
+          <app-star-rating [rating]="sousMenu.rating"></app-star-rating>
 
-        <h3>repas delicieux </h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+        <h3>{{ sousMenu.menuName }} </h3>
+        <p>{{ sousMenu.description }}</p>
         <div class="last-item">
           <button class="imper">ajouter au panier</button>
-          <p class="price">$12.99</p>
+          <p class="price">{{ sousMenu.price | currency }}</p>
         </div>
       </div>
     </div>

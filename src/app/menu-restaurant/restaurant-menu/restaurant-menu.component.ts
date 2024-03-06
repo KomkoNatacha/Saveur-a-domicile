@@ -28,6 +28,7 @@ export class RestaurantMenuComponent implements OnInit{
     },
   ]
   public menus : IMenuItem[] = []
+  public souMenus: IMenuItem[] = [];
 
   constructor(private menuService: RestauMenuService ) {
   }
@@ -35,6 +36,18 @@ export class RestaurantMenuComponent implements OnInit{
     this.menuService.getListMenus().subscribe({
         next: (menu: IMenuItem[]) => {
           this.menus = menu
+        },
+        error: (msg) => {
+          console.log(msg)
+        }
+      }
+
+    )
+
+
+    this.menuService.getListSousMenus().subscribe({
+        next: (menu: IMenuItem[]) => {
+          this.souMenus = menu
         },
         error: (msg) => {
           console.log(msg)
