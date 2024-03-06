@@ -32,7 +32,8 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/titleIcone.jpg",
-              "src/assets"
+              "src/assets",
+              "src/api"
             ],
             "styles": [
               "@angular/material/prebuilt-themes/purple-green.css",

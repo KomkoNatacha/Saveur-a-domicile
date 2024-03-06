@@ -27,6 +27,7 @@ import { MenuRestauHomepageComponent } from './menu-restau-homepage/menu-restau-
 import { RestaurantMenuComponent } from './menu-restaurant/restaurant-menu/restaurant-menu.component';
 import { CourouselMenuRestaurantComponent } from './menu-restaurant/courousel-menu-restaurant/courousel-menu-restaurant.component';
 import { MenuRestaurantModule } from './menu-restaurant/menu-restaurant.module';
+import {HttpClientModule} from "@angular/common/http";
 
 
 
@@ -62,7 +63,7 @@ import { MenuRestaurantModule } from './menu-restaurant/menu-restaurant.module';
     CommonModule,
     MenuRestaurantModule,
     AppRoutingModule,
-
+    HttpClientModule,
 
   ],
   providers: [

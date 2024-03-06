@@ -1,0 +1,66 @@
+[
+  {
+    "menuId": 1,
+    "menuName": "Burger Royale",
+    "description": "Un délicieux plat de pâtes fraîches aux tomates et basilic, accompagné d'une sauce maison savoureuse.",
+    "price": 15.5,
+    "imageUrl": "assets/menu-image/dish-1.png",
+    "rating": 3.5
+  },
+  {
+    "menuId": 2,
+    "menuName": "Hanburger",
+    "description": "Un généreux plateau de sushis frais, préparés avec des ingrédients de qualité et servi avec une variété de sauces.",
+    "price": 19.5,
+    "imageUrl": "assets/menu-image/dish-2.png",
+    "rating": 5
+  },
+  {
+    "menuId": 3,
+    "menuName": "Poulet Pané",
+    "description": "Une salade fraîche et croquante garnie de légumes de saison, de fromage de chèvre et de noix caramélisées, accompagnée d'une vinaigrette maison.",
+    "price": 18.12,
+    "imageUrl": "assets/menu-image/dish-3.png",
+    "rating": 4
+  },
+  {
+    "menuId": 4,
+    "menuName": "Poulet Royal",
+    "description": "Un hamburger juteux et savoureux, garni de fromage fondu, de tomates fraîches et de laitue croustillante, servi avec des frites dorées à la perfection.",
+    "price": 15.12,
+    "imageUrl": "assets/menu-image/dish-4.png",
+    "rating": 2.5
+  },
+  {
+    "menuId": 5,
+    "menuName": "Pizza",
+    "description": "Un plat végétarien réconfortant composé de légumes rôtis de saison, accompagné d'une purée de pommes de terre crémeuse et d'une sauce aux champignons",
+    "price": 23.5,
+    "imageUrl": "assets/menu-image/dish-5.png",
+    "rating": 3.5
+  },
+  {
+    "menuId": 6,
+    "menuName": "Gateau Choco",
+    "description": "Une pizza fraîchement cuite au four, garnie de pepperoni, de poivrons colorés, de champignons et de fromage fondant, servie sur une croûte croustillante.",
+    "price": 15.5,
+    "imageUrl": "assets/menu-image/dish-6.png",
+    "rating": 5
+  },
+  {
+    "menuId": 7,
+    "menuName": "Poulet du Boss",
+    "description": "Un bol nourrissant de ramen japonais, garni de nouilles fraîches, de tranches de porc rôti, d'œuf mollet, de légumes croquants et d'une savoureuse soupe miso",
+    "price": 12.12,
+    "imageUrl": "assets/menu-image/dish-7.jpg",
+    "rating": 4
+  },
+  {
+    "menuId": 8,
+    "menuName": "plat Royal",
+    "description": "Un délicieux plat de pâtes fraîches aux tomates et basilic, accompagné d'une sauce maison savoureuse.",
+    "price": 13.12,
+    "imageUrl": "assets/menu-image/dish-8.png",
+    "rating": 4.5
+  }
+]

@@ -14,9 +14,11 @@
 }
 
 .custom-toolbar {
+  position: fixed;
   width: 100%;
   background: #ffffff;
   height: 80px;
+  margin-bottom: 80px;
   box-shadow: snow;
   z-index: 1000;
 
