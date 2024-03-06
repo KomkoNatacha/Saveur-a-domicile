@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 
 
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
@@ -24,10 +23,9 @@ import {CommonModule} from '@angular/common';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { RestaurantHomeComponent } from './restaurant-home/restaurant-home.component';
 import { MenuRestauHomepageComponent } from './menu-restau-homepage/menu-restau-homepage.component';
-import { RestaurantMenuComponent } from './menu-restaurant/restaurant-menu/restaurant-menu.component';
-import { CourouselMenuRestaurantComponent } from './menu-restaurant/courousel-menu-restaurant/courousel-menu-restaurant.component';
 import { MenuRestaurantModule } from './menu-restaurant/menu-restaurant.module';
 import {HttpClientModule} from "@angular/common/http";
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 
 
@@ -64,6 +62,9 @@ import {HttpClientModule} from "@angular/common/http";
     MenuRestaurantModule,
     AppRoutingModule,
     HttpClientModule,
+    CarouselModule,
+    MatTabsModule
+
 
   ],
   providers: [

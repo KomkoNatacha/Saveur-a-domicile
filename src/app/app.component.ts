@@ -14,7 +14,7 @@ export class AppComponent {
 
   isClientHomePage(): boolean {
     const currentUrl = this.router.url;
-    return currentUrl === '/' || currentUrl === '/signin' || currentUrl === '/signup';
+    return currentUrl === '/' || currentUrl === '/signin' || currentUrl === '/signup' || currentUrl === '/menu' ;
   }
 
   isRestaurantHomePage(): boolean {

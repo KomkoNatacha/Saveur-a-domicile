@@ -1,61 +1,66 @@
 
 <div class="mat-body">
   <!-- Slider home  -->
-  <mat-grid-list class="mylist" cols="4" rowHeight="100vh">
-    <mat-grid-tile [colspan]="2" [rowspan]="1">
-      <div class="slideTitle">
-        <h2>Explore les restaurants à proximité</h2>
-        <h3>Burger</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud. </p>
-        <button color="accent" mat-button class="btn-comander">Commandez maintenant !</button>
-      </div>
-    </mat-grid-tile>
+  <div style="width: 100%">
+  <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide>
+      <mat-grid-list class="mylist" cols="4" rowHeight="100vh">
+        <mat-grid-tile [colspan]="2" [rowspan]="1">
+          <div class="slideTitle">
+            <h2>Explore les restaurants à proximité</h2>
+            <h3>Pizza</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud. </p>
+            <button color="accent" mat-button class="btn-comander">Commandez maintenant !</button>
+          </div>
+        </mat-grid-tile>
 
-    <mat-grid-tile [colspan]="2" [rowspan]="1">
-      <img class="imgSlide" alt="" height="80%"  src="assets/images/home-img-3.png" width="100%">
-    </mat-grid-tile>
-  </mat-grid-list>
+        <mat-grid-tile [colspan]="2" [rowspan]="1">
+          <img class="imgSlide" alt="" height="80%"  src="assets/images/home-img-3.png" width="100%">
+        </mat-grid-tile>
+      </mat-grid-list>
+    </ng-template>
 
-  <mat-grid-list class="mylist" cols="4" rowHeight="100vh">
-    <mat-grid-tile [colspan]="2" [rowspan]="1">
-      <div class="slideTitle">
-        <h2>Explore les restaurants à proximité</h2>
-        <h3>Pizza</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud. </p>
-        <button color="accent" mat-button class="btn-comander">Commandez maintenant !</button>
-      </div>
-    </mat-grid-tile>
+    <ng-template carouselSlide>
+      <mat-grid-list class="mylist" cols="4" rowHeight="100vh">
+        <mat-grid-tile [colspan]="2" [rowspan]="1">
+          <div class="slideTitle">
+            <h2>Explore les restaurants à proximité</h2>
+            <h3>Poulet frit</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud. </p>
+            <button color="accent" mat-button class="btn-comander">Commandez maintenant !</button>
+          </div>
+        </mat-grid-tile>
 
-    <mat-grid-tile [colspan]="2" [rowspan]="1">
-      <img class="imgSlide" alt="" height="80%"  src="assets/images/slideImg1.png" width="100%">
-    </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" [rowspan]="1">
+          <img class="imgSlide" alt="" height="80%"  src="assets/images/home-img-2.png" width="100%">
+        </mat-grid-tile>
 
-  </mat-grid-list>
+      </mat-grid-list>
+    </ng-template>
+    <ng-template carouselSlide>
+      <mat-grid-list class="mylist" cols="4" rowHeight="100vh">
+        <mat-grid-tile [colspan]="2" [rowspan]="1">
+          <div class="slideTitle">
+            <h2>Explore les restaurants à proximité</h2>
+            <h3>Nouilles</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud. </p>
+            <button color="accent" mat-button class="btn-comander">Commandez maintenant !</button>
+          </div>
+        </mat-grid-tile>
 
-  <mat-grid-list class="mylist" cols="4" rowHeight="100vh">
-    <mat-grid-tile [colspan]="2" [rowspan]="1">
-      <div class="slideTitle">
-        <h2>Explore les restaurants à proximité</h2>
-        <h3>Sushi</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud. </p>
-        <button color="accent" mat-button class="btn-comander">Commandez maintenant !</button>
-      </div>
-    </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" [rowspan]="1">
+          <img class="imgSlide" alt="" height="80%"  src="assets/images/home-img-1.png" width="100%">
+        </mat-grid-tile>
 
-    <mat-grid-tile [colspan]="2" [rowspan]="1">
-      <img class="imgSlide" alt="" height="80%"  src="assets/images/slideImg1.png" width="100%">
-    </mat-grid-tile>
-
-  </mat-grid-list>
-
-
-
+      </mat-grid-list>    </ng-template>
+  </owl-carousel-o>
+  </div>
 
   <div class="container">
 
