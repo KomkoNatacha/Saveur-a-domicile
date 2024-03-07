@@ -127,7 +127,7 @@
 }
 
 section {
-  padding: 2rem 9%;
+  padding: 2rem 9% 0;
 }
 
 section:nth-child(even) {
@@ -258,6 +258,7 @@ section:nth-child(even) {
 }
 
 .menu .box-container .box .content h3 {
+  margin-top: -5px;
   color: #192a56;
   font-size: 25px;
 }
@@ -268,7 +269,7 @@ section:nth-child(even) {
   font-size: 17px;
   padding: .5rem 0;
   text-align: justify;
-  margin-top: -20px;
+  margin-top: -28px;
   margin-bottom: -10px;
 }
 
@@ -286,7 +287,7 @@ section:nth-child(even) {
   display: inline-block;
   font-size: 18px;
   color: #fff;
-  background: #192a56;
+  background: #d31e1e;
   border-radius: .5rem;
   cursor: pointer;
   padding: .8rem 3rem;

@@ -1,4 +1,7 @@
-div{
-  background: rgba(239, 239, 239, 0.84);
 
+
+span{
+  display: flex;
+  padding-top: 70px;
+  flex-direction: column;
 }

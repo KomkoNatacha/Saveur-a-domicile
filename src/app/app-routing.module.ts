@@ -13,7 +13,6 @@ const routes: Routes = [
   {path: 'home-restaurant', component : RestaurantHomeComponent},
   { path: '', redirectTo: 'home', pathMatch: "full" },
   { path: '**', redirectTo: 'home', pathMatch: "full" },
-
 ];
 
 @NgModule({

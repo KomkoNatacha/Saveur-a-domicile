@@ -23,7 +23,7 @@
 
       <div class="bottom-info">
         <span>{{ menu.price | currency }}</span>
-        <button class="btn">ajouter au panier</button>
+        <button class="btn" [routerLink]="['/signin']">ajouter au panier</button>
       </div>
     </div>
   </div>
@@ -85,7 +85,7 @@
         <h3>{{ sousMenu.menuName }} </h3>
         <p>{{ sousMenu.description }}</p>
         <div class="last-item">
-          <button class="imper">ajouter au panier</button>
+          <button class="imper" [routerLink]="['/signin']">ajouter au panier</button>
           <p class="price">{{ sousMenu.price | currency }}</p>
         </div>
       </div>
