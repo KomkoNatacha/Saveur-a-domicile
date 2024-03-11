@@ -1,0 +1,61 @@
+.espace {
+  flex: 1;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  margin: 20px;
+  padding-right: 30px;
+  box-sizing: content-box;
+  display: flex;
+  position: absolute;
+}
+
+.custom-toolbar {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  top: 0;
+  background: #ffffff;
+  height: 80px;
+  box-shadow: snow;
+  z-index: 1000;
+}
+
+.nav button {
+  font-size: 17px;
+  font-family: Arial, sans-serif;
+  margin: 4px;
+  color: black;
+}
+
+.custom-toolbar .custom-button:hover {
+  background-color: #d31e1e;
+}
+
+.custom-toolbar .custom-button{
+  color: black;
+}
+
+.nav .active-button  {
+  background-color: #d31e1e;
+  color: white;
+  font-weight: bold;
+}
+
+
+.icon-container .custom-button {
+  margin-left: 10px;
+}
+
+.icon-container .custom-button:hover {
+  margin-left: 10px;
+
+}
+.nav{
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+}

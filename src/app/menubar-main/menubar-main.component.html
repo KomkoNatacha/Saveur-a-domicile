@@ -1,0 +1,20 @@
+<mat-toolbar class="mat-elevation-z8 custom-toolbar">
+  <img src="assets/images/logoPrincipalBlanc.jpg" alt="homeImage" class="logo" [routerLink]="['/menu']">
+  <span class="espace"></span>
+
+  <div class="nav">
+    <button mat-button [routerLink]="['/home']" [ngClass]="{ 'active-button': isLinkActive('/home') }">Accueil</button>
+    <button mat-button [routerLink]="['/menu']" routerLinkActive ='active-button' [routerLinkActiveOptions]= "{exact : true}" >Menu</button>
+    <button mat-button [routerLink]="['/signin']" routerLinkActive ='active-button' [routerLinkActiveOptions]= "{exact : true}" >Se connecter</button>
+    <button mat-button [routerLink]="['/signup']" routerLinkActive ='active-button' [routerLinkActiveOptions]= "{exact : true}" >S'inscrire</button>
+  </div>
+
+  <div class="icon-container">
+    <button class="custom-button" mat-icon-button>
+      <mat-icon aria-hidden="false" aria-label="Search icon">search</mat-icon>
+    </button>
+    <button class="custom-button" mat-icon-button>
+      <mat-icon aria-hidden="false" aria-label="Shopping cart icon">shopping_cart</mat-icon>
+    </button>
+  </div>
+</mat-toolbar>

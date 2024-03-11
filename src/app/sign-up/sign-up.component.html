@@ -1,0 +1,84 @@
+<div class="cont-signup">
+  <mat-card>
+    <mat-card-content>
+      <div class="header">
+        <div class="img-div">
+          <img class="imgUser" alt="" height="100%" width="100%" src="assets/images/eatgirl.jpg" >
+        </div>
+        <div class="infoUser">
+        <h2>INSCRIPTION</h2>
+          <div class="social-icon">
+            <button mat-icon-button >
+              <mat-icon>facebook</mat-icon>
+            </button>
+            <button mat-icon-button >
+              <mat-icon>facebook</mat-icon>
+            </button>
+            <button mat-icon-button >
+              <mat-icon>messenger</mat-icon>
+            </button>
+            <button mat-icon-button >
+              <mat-icon>facebook</mat-icon>
+            </button>
+          </div>
+
+          <form [formGroup]="signUpForm">
+        <div class="form-group">
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label class="label">Nom</mat-label>
+            <input formControlName="nom" matInput required />
+          </mat-form-field>
+        </div>
+        <div class="form-group">
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label class="label">Prénom</mat-label>
+            <input formControlName="prenom" matInput required />
+          </mat-form-field>
+        </div>
+        <div class="form-group">
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label class="label">Email</mat-label>
+            <input formControlName="email" matInput required email />
+          </mat-form-field>
+        </div>
+        <div class="form-group">
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label class="label">Adresse Domicile</mat-label>
+            <input formControlName="adresse" matInput required />
+          </mat-form-field>
+        </div>
+        <div class="form-group">
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label class="label">Téléphone</mat-label>
+            <input formControlName="telephone" matInput required />
+            <mat-icon matSuffix>phone</mat-icon>
+          </mat-form-field>
+        </div>
+        <div class="form-group">
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label class="label">Mot de passe</mat-label>
+            <input formControlName="password" matInput [type]="hide ? 'password' : 'text'" required />
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="hide ? 'Hide password' : 'Show password'">
+              <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+            </button>
+          </mat-form-field>
+        </div>
+        <div class="form-group">
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label class="label">Confirmation Mot de passe</mat-label>
+            <input formControlName="confirmPassword" matInput  [type]="hide ? 'password' : 'text'" required />
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="hide ? 'Hide password' : 'Show password'">
+              <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+            </button>
+          </mat-form-field>
+        </div>
+        <button mat-flat-button color="primary" class="yellow-button">S'inscrire</button>
+      </form>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
+<footer>
+  <div class="div-foot" style="text-align: center;">Copyright &#64; <span class="year">2024</span></div>
+</footer>

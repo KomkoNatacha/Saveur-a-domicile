@@ -1,0 +1,73 @@
+.cont-signin{
+  background: rgba(239, 239, 239, 0.84);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-top: 25px;
+}
+mat-card{
+  width: 75%;
+  text-align: center;
+  max-height: 600px;
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: snow;
+  margin: 40px;
+  border-radius: 10px;
+}
+
+.full-wi{
+  width: 80%;
+}
+
+
+.email-inp{
+  padding-top: 1rem;
+
+  }
+.aLink{
+  float: right;
+  padding-right: 60px;
+  text-decoration: none;
+
+}
+.red-button{
+  background: #d31e1e;
+  padding: 15px;
+}
+
+.label {
+ color: #625e5e;
+}
+
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contSIn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header{
+  flex: 1;
+}
+.demiCircle{
+  flex: 1;
+  height: 350px;
+  border-radius: 30% 0 0 30% / 80%;
+  background: url("../../assets/images/eatgirl2.jpg")center center/cover no-repeat;
+}
+
+footer {
+  background: white;
+}
+.div-foot{
+  padding-bottom: 30px;
+  padding-top: 20px;
+  font-size: 18px;
+}
+

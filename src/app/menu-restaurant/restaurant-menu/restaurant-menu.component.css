@@ -1,0 +1,308 @@
+
+/*dishes*/
+.dishes .box-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.dishes .box-container .box {
+  display: flex;
+  padding: 2.5rem;
+  background: #fff;
+  border-radius: .5rem;
+  border: .1rem solid rgba(0, 0, 0, .2);
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.stars{
+  display: flex;
+  justify-content: center;
+}
+.dishes .box-container .box .fa-heart mat-icon,
+.dishes .box-container .box .fa-eye mat-icon{
+  position: absolute;
+  top: 1.5rem;
+  background: #eee;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  line-height: 5rem;
+  font-size: 1.5rem;
+  color: #192a56;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dishes .box-container .box .fa-heart mat-icon:hover,
+.dishes .box-container .box .fa-eye mat-icon:hover {
+  background: #27ae60;
+  color: #fff;
+}
+.dishes .box-container .box .fa-heart  mat-icon{
+  right: -15rem;
+}
+
+.dishes .box-container .box .fa-eye mat-icon{
+  left: -15rem;
+}
+
+.dishes .box-container .box:hover .fa-heart mat-icon{
+  right: 1.5rem;
+}
+
+.dishes .box-container .box:hover .fa-eye mat-icon{
+  left: 1.5rem;
+}
+
+.dishes .box-container .box img {
+  height: 17rem;
+  margin: 1rem 0;
+}
+.dishes .box-container .box h3{
+  font-size: 19px;
+  text-decoration: none;
+}
+
+.dishes .box-container .box h3, .title-menu {
+  color: #192a56;
+}
+.title-menu {
+  font-size: 2.5rem;
+}
+.sub-heading {
+  text-align: center;
+  color: #27ae60;
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+.heading {
+  text-align: center;
+  color: #192a56;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+}
+.bottom-info{
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  align-items: center;
+}
+
+.bottom-info span {
+  color: #27ae60;
+  font-weight: bolder;
+  margin-right: 1rem;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 1.5rem;
+  color: #fff;
+  background: #192a56;
+  border-radius: .5rem;
+  cursor: pointer;
+  padding: .8rem 3rem;
+  text-decoration: none;
+  width:55%;
+  align-items: center;
+  border: none;
+  text-align: center;
+
+}
+
+.btn:hover {
+  background: #27ae60;
+  letter-spacing: .1rem;
+  width: 60%;
+}
+
+section {
+  padding: 2rem 9% 0;
+}
+
+section:nth-child(even) {
+  background: #eee;
+}
+/*about*/
+
+.about .row {
+  display: flex;
+  align-items: center;
+}
+
+.about .row .image {
+  flex: 1 1 45rem;
+}
+
+.about .row .image img {
+  width: 100%;
+}
+
+.about .row .content {
+  flex: 1 1 45rem;
+}
+
+.about .row .content h3 {
+  color: #192a56;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: .5rem 0;
+}
+
+.about .row .content p {
+  color: #666;
+  font-size: 15px;
+  padding: .5rem 0;
+  line-height: 2;
+}
+
+.about .row .content .icons-container {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+  margin-top: .5rem;
+}
+
+.about .row .content .icons-container .icons {
+  background: #eee;
+  border-radius: .5rem;
+  border: .1rem solid rgba(0, 0, 0, .2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex: 1 1 17rem;
+  padding: 0.7rem 0.7rem;
+}
+
+.about .row .content .icons-container .icons mat-icon {
+  color: #27ae60;
+}
+
+.icons span {
+  font-size: 15px;
+  color: #192a56;
+}
+
+/*Menu*/
+
+.menu .box-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+
+.menu .box-container .box{
+  border: .1rem solid rgba(0, 0, 0, .2);
+  background: #fff;
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+  border-radius: .5rem;
+  height: 460px;
+  width: 100%;
+}
+.menu .box-container .box .image {
+  height: 55%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 9px 15px 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.menu .box-container .box .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
+
+.menu .box-container .box .image mat-icon {
+  position: absolute;
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  width: 2rem;
+  left: 29rem ;
+  font-size: 2rem;
+  padding:10px;
+  border-radius: 50%;
+  color: #192a56;
+  margin-bottom: 170px;
+}
+
+.menu .box-container .box .image .fa-heart:hover {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+.menu .box-container .box .content {
+  padding: 15px;
+}
+
+.menu .box-container .box .content h3 {
+  margin-top: -5px;
+  color: #192a56;
+  font-size: 25px;
+}
+
+
+.menu .box-container .box .content p {
+  color: #666;
+  font-size: 17px;
+  padding: .5rem 0;
+  text-align: justify;
+  margin-top: -28px;
+  margin-bottom: -10px;
+}
+
+.menu .box-container .box .content .price {
+  color: #27ae60;
+  margin-left: 20px;
+  font-size: 28px;
+}
+.menu .box-container .box .content app-star-rating{
+  position: relative;
+  bottom: 10px;
+}
+.imper{
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background: #d31e1e;
+  border-radius: .5rem;
+  cursor: pointer;
+  padding: .8rem 3rem;
+  text-decoration: none;
+  align-items: center;
+  border: none;
+  text-align: center;
+}
+.imper:hover {
+  background: #27ae60;
+  letter-spacing: 1px;
+  width: 70%;
+}
+.last-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
