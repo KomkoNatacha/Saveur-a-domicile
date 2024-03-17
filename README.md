@@ -7,3 +7,10 @@ Les clients ont la possibilité de commander en ligne à partir des menus des re
 Les restaurateurs sont tenus de s'identifier correctement et de spécifier leurs emplacements afin que les clients puissent facilement trouver des options de restauration à proximité. Les utilisateurs identifiés ont la possibilité de passer des commandes directement à partir de l'application, ce qui simplifie encore davantage le processus d'achat.
 
 "Saveur à domicile" vise à offrir une solution pratique et conviviale pour les restaurateurs et les clients, facilitant ainsi la découverte de nouveaux plats et restaurants tout en simplifiant le processus de commande et de livraison de repas à domicile.
+
+
+Ce projet a été conçu et développé par une équipe restreinte de trois personnes, dont moi-même.
+
+
+
+
