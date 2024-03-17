@@ -1,4 +1,4 @@
-# Saveur a domicile (en cours de developpement)
+# Saveurs a domicile (en cours de developpement)
 
 "Saveur à domicile" est une application qui vise à simplifier le processus de commande de plats auprès de restaurants locaux. Les restaurateurs peuvent créer des comptes et exposer leurs plats, y compris des photos, des descriptions et des prix, permettant ainsi aux clients de découvrir facilement leur offre culinaire.
 
